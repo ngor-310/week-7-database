@@ -1,0 +1,10 @@
+postgres-dr-lab/
+│
+├── README.md                 # Updated with all lab steps
+├── migrations/               # Flyway migration files
+│   ├── V1__core_tables.sql
+│   ├── V2__audit_log.sql
+│   └── V3__categories.sql
+└── configs/                  # Previous configuration snippets
+    ├── postgresql.conf
+    └── pg_hba.conf
