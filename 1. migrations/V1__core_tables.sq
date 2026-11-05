@@ -1,0 +1,12 @@
+-- V1: Core tables setup (e.g., students and categories)
+CREATE TABLE students (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE
+);
+
+CREATE TABLE categories (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    parent_id INT REFERENCES categories(id)
+);
